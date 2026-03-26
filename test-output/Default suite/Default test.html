@@ -1,0 +1,165 @@
+<html>
+<head>
+<title>TestNG:  Default test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Default test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>17/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sat Mar 21 11:37:13 IST 2026</td>
+</tr>
+<tr><td>Total time:</td><td>280 seconds (280514 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testcase.LoginTest.loginDataDriven()'><b>loginDataDriven</b><br>Test class: testcase.LoginTest<br>Test method: Data-driven login test for all credential combinations<br>Parameters: invalid@qabrains.com, Password123, false, Invalid email</td>
+<td></td>
+<td>2</td>
+<td>testcase.LoginTest@5fb97279</td></tr>
+<tr>
+<td title='testcase.LoginTest.loginDataDriven()'><b>loginDataDriven</b><br>Test class: testcase.LoginTest<br>Test method: Data-driven login test for all credential combinations<br>Parameters: test@qabrains.com, WrongPass999, false, Wrong password</td>
+<td></td>
+<td>3</td>
+<td>testcase.LoginTest@5fb97279</td></tr>
+<tr>
+<td title='testcase.LoginTest.loginDataDriven()'><b>loginDataDriven</b><br>Test class: testcase.LoginTest<br>Test method: Data-driven login test for all credential combinations<br>Parameters: test@qabrains.com, , false, Empty password</td>
+<td></td>
+<td>2</td>
+<td>testcase.LoginTest@5fb97279</td></tr>
+<tr>
+<td title='testcase.LoginTest.loginDataDriven()'><b>loginDataDriven</b><br>Test class: testcase.LoginTest<br>Test method: Data-driven login test for all credential combinations<br>Parameters: , , false, Empty fields</td>
+<td></td>
+<td>2</td>
+<td>testcase.LoginTest@5fb97279</td></tr>
+<tr>
+<td title='testcase.LoginTest.validLogin_StudentUser()'><b>validLogin_StudentUser</b><br>Test class: testcase.LoginTest<br>Test method: Valid login with student@qabrains.com</td>
+<td></td>
+<td>5</td>
+<td>testcase.LoginTest@5fb97279</td></tr>
+<tr>
+<td title='testcase.LoginTest.emptyFields()'><b>emptyFields</b><br>Test class: testcase.LoginTest<br>Test method: Empty fields should not allow login</td>
+<td></td>
+<td>2</td>
+<td>testcase.LoginTest@5fb97279</td></tr>
+<tr>
+<td title='testcase.LoginTest.loginDataDriven()'><b>loginDataDriven</b><br>Test class: testcase.LoginTest<br>Test method: Data-driven login test for all credential combinations<br>Parameters: test@qabrains.com, Password123, true, Valid user 1</td>
+<td></td>
+<td>5</td>
+<td>testcase.LoginTest@5fb97279</td></tr>
+<tr>
+<td title='testcase.LoginTest.loginDataDriven()'><b>loginDataDriven</b><br>Test class: testcase.LoginTest<br>Test method: Data-driven login test for all credential combinations<br>Parameters: practice@qabrains.com, Password123, true, Valid user 2</td>
+<td></td>
+<td>5</td>
+<td>testcase.LoginTest@5fb97279</td></tr>
+<tr>
+<td title='testcase.LoginTest.validEmail_EmptyPassword()'><b>validEmail_EmptyPassword</b><br>Test class: testcase.LoginTest<br>Test method: Valid email with empty password should fail</td>
+<td></td>
+<td>3</td>
+<td>testcase.LoginTest@5fb97279</td></tr>
+<tr>
+<td title='testcase.LoginTest.validEmail_InvalidPassword()'><b>validEmail_InvalidPassword</b><br>Test class: testcase.LoginTest<br>Test method: Valid email with wrong password should fail</td>
+<td></td>
+<td>18</td>
+<td>testcase.LoginTest@5fb97279</td></tr>
+<tr>
+<td title='testcase.LoginTest.loginDataDriven()'><b>loginDataDriven</b><br>Test class: testcase.LoginTest<br>Test method: Data-driven login test for all credential combinations<br>Parameters: fake@fake.com, FakePass123, false, Both invalid</td>
+<td></td>
+<td>2</td>
+<td>testcase.LoginTest@5fb97279</td></tr>
+<tr>
+<td title='testcase.LoginTest.loginDataDriven()'><b>loginDataDriven</b><br>Test class: testcase.LoginTest<br>Test method: Data-driven login test for all credential combinations<br>Parameters: notanemail, Password123, false, Invalid email format</td>
+<td></td>
+<td>2</td>
+<td>testcase.LoginTest@5fb97279</td></tr>
+<tr>
+<td title='testcase.LoginTest.validLogin_TestUser()'><b>validLogin_TestUser</b><br>Test class: testcase.LoginTest<br>Test method: Valid login with test@qabrains.com</td>
+<td></td>
+<td>6</td>
+<td>testcase.LoginTest@5fb97279</td></tr>
+<tr>
+<td title='testcase.LoginTest.invalidEmail_ValidPassword()'><b>invalidEmail_ValidPassword</b><br>Test class: testcase.LoginTest<br>Test method: Invalid email with valid password should fail</td>
+<td></td>
+<td>18</td>
+<td>testcase.LoginTest@5fb97279</td></tr>
+<tr>
+<td title='testcase.LoginTest.invalidEmail_InvalidPassword()'><b>invalidEmail_InvalidPassword</b><br>Test class: testcase.LoginTest<br>Test method: Invalid email and invalid password should fail</td>
+<td></td>
+<td>18</td>
+<td>testcase.LoginTest@5fb97279</td></tr>
+<tr>
+<td title='testcase.LoginTest.loginDataDriven()'><b>loginDataDriven</b><br>Test class: testcase.LoginTest<br>Test method: Data-driven login test for all credential combinations<br>Parameters: student@qabrains.com, Password123, true, Valid user 3</td>
+<td></td>
+<td>5</td>
+<td>testcase.LoginTest@5fb97279</td></tr>
+<tr>
+<td title='testcase.LoginTest.validLogin_PracticeUser()'><b>validLogin_PracticeUser</b><br>Test class: testcase.LoginTest<br>Test method: Valid login with practice@qabrains.com</td>
+<td></td>
+<td>5</td>
+<td>testcase.LoginTest@5fb97279</td></tr>
+</table><p>
+</body>
+</html>
